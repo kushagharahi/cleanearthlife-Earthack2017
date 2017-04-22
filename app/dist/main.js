@@ -1,9 +1,6 @@
-webpackJsonp([0],[
-/* 0 */,
-/* 1 */,
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
+webpackJsonp([0],{
 
+<<<<<<< HEAD
 module.exports = __webpack_require__.p + "index.html";
 
 /***/ }),
@@ -120,15 +117,25 @@ if(false) {
 /* 17 */,
 /* 18 */,
 /* 19 */
+=======
+/***/ 5:
+>>>>>>> cb55c7ce5be3019eace5327ba9342760f1e32037
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_resource__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_router__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App_vue__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__App_vue__);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_resource__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_router__ = __webpack_require__(2);
+throw new Error("Cannot find module \"App.vue\"");
+>>>>>>> cb55c7ce5be3019eace5327ba9342760f1e32037
 
 
 
@@ -154,16 +161,26 @@ const root = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
   el: '#app',
   router: router,
   render: function(h){
-    return h(__WEBPACK_IMPORTED_MODULE_3__App_vue___default.a)
+    return h(__WEBPACK_IMPORTED_MODULE_3_App_vue___default.a)
   },
   replace: false
 })
 
 /***/ }),
+<<<<<<< HEAD
 /* 20 */
+=======
+
+/***/ 6:
+>>>>>>> cb55c7ce5be3019eace5327ba9342760f1e32037
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ })
+<<<<<<< HEAD
 ],[19]);
+=======
+
+},[5]);
+>>>>>>> cb55c7ce5be3019eace5327ba9342760f1e32037
