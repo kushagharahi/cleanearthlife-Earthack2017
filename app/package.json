@@ -7,7 +7,7 @@
     "build": "rm -rf dist/* && webpack",
     "buildprod": "rm -rf dist/* && webpack -p",
     "clean": "rm -rf dist/*"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kushagharahi/Earthack2017.git"
@@ -38,11 +38,11 @@
     "vue-template-compiler": "^2.2.4",
     "webpack": "^2.2.1"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "dependencies": {
     "vue": "^2.2.4",
     "vue-resource": "^1.2.1",
-    "vue-router": "^2.3.0"
+    "vue-router": "^2.3.0",
+    "vue-smoothscroll": "^0.1.1"
   }
 }

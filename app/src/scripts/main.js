@@ -3,6 +3,9 @@ import VueResource from 'vue-resource'
 import VueRouter from 'vue-router'
 import App from './App.vue'
 
+var VueSmoothScroll = require('vue-smoothscroll');
+
+Vue.use(VueSmoothScroll);
 Vue.use(VueRouter)
 Vue.use(VueResource)
 
