@@ -87,6 +87,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -247,7 +252,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n.fullscreen {\n  width: 100%;\n  height: 100%;\n  background-color: yellow;\n}\n", ""]);
+exports.push([module.i, "\n.fullscreen {\n  width: 100%;\n  height: 100vh;\n}\n#component {\n  margin: 0 auto;\n  max-width: 800px;\n  padding-top: 60px;\n  padding-left: 20px;\n  padding-right: 20px;\n}\n.button-link {\n  padding: 10px 15px;\n  background: #4479BA;\n  color: #FFF;\n  -webkit-border-radius: 4px;\n  -moz-border-radius: 4px;\n  border-radius: 4px;\n  border: solid 1px #20538D;\n  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);\n  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);\n  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);\n  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);\n  -webkit-transition-duration: 0.2s;\n  -moz-transition-duration: 0.2s;\n  transition-duration: 0.2s;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n.button-link:hover {\n  background: #356094;\n  border: solid 1px #2A4E77;\n  text-decoration: none;\n}\n.button-link:active {\n  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);\n  -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);\n  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);\n  background: #2E5481;\n  border: solid 1px #203E5F;\n}\n", ""]);
 
 // exports
 
@@ -575,52 +580,74 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', {
+  return _c('div', {
+    attrs: {
+      "id": "content"
+    }
+  }, [_c('div', {
     staticClass: "fullscreen",
+    staticStyle: {
+      "background-color": "lightblue"
+    },
     attrs: {
       "id": "intro"
     }
-  }, [_c('intro-component'), _vm._v(" "), _c('input', {
+  }, [_c('div', {
     attrs: {
-      "type": "button",
-      "value": "Next"
-    },
+      "id": "component"
+    }
+  }, [_c('intro-component'), _vm._v(" "), _c('a', {
+    staticClass: "button-link",
     on: {
       "click": function($event) {
         _vm.scroll("water")
       }
     }
-  })], 1), _vm._v(" "), _c('div', {
+  }, [_c('i', {
+    staticClass: "fa fa-angle-down"
+  }), _vm._v(" Next")])], 1)]), _vm._v(" "), _c('div', {
     staticClass: "fullscreen",
+    staticStyle: {
+      "background-color": "green"
+    },
     attrs: {
       "id": "water"
     }
-  }, [_c('water-component'), _vm._v(" "), _c('input', {
+  }, [_c('div', {
     attrs: {
-      "type": "button",
-      "value": "Next"
-    },
+      "id": "component"
+    }
+  }, [_c('water-component'), _vm._v(" "), _c('a', {
+    staticClass: "button-link",
     on: {
       "click": function($event) {
-        _vm.scroll("polution")
+        _vm.scroll("pollution")
       }
     }
-  })], 1), _vm._v(" "), _c('div', {
+  }, [_c('i', {
+    staticClass: "fa fa-angle-down"
+  }), _vm._v(" Next")])], 1)]), _vm._v(" "), _c('div', {
     staticClass: "fullscreen",
-    attrs: {
-      "id": "polution"
-    }
-  }, [_c('pollution-component'), _vm._v(" "), _c('input', {
-    attrs: {
-      "type": "button",
-      "value": "Back to Top"
+    staticStyle: {
+      "background-color": "yellow"
     },
+    attrs: {
+      "id": "pollution"
+    }
+  }, [_c('div', {
+    attrs: {
+      "id": "component"
+    }
+  }, [_c('pollution-component'), _vm._v(" "), _c('a', {
+    staticClass: "button-link",
     on: {
       "click": function($event) {
         _vm.scroll("intro")
       }
     }
-  })], 1)])
+  }, [_c('i', {
+    staticClass: "fa fa-angle-up"
+  }), _vm._v(" Back to Top")])], 1)])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -947,7 +974,7 @@ __webpack_require__(5);
 const router = new __WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */]({
 	mode: 'history',
 	routes: [
-		// {path: '/profile', component: view('Profile'), meta: {title: 'Find your Impact'}}
+		{path: '/profile', component: view('Profile'), meta: {title: 'Find your Impact'}}
 	]
 });
 

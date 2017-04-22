@@ -14,7 +14,7 @@ require('file-loader?name=[name].[ext]!../static/index.html');
 const router = new VueRouter({
 	mode: 'history',
 	routes: [
-		// {path: '/profile', component: view('Profile'), meta: {title: 'Find your Impact'}}
+		{path: '/profile', component: view('Profile'), meta: {title: 'Find your Impact'}}
 	]
 });
 
