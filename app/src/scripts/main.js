@@ -3,16 +3,18 @@ import VueResource from 'vue-resource';
 import VueRouter from 'vue-router';
 import App from './App.vue';
 
-Vue.use(VueRouter);
-Vue.use(VueResource);
+var VueSmoothScroll = require('vue-smoothscroll');
+
+Vue.use(VueSmoothScroll);
+Vue.use(VueRouter)
+Vue.use(VueResource)
 
 require('file-loader?name=[name].[ext]!../static/index.html');
 
 const router = new VueRouter({
 	mode: 'history',
 	routes: [
-		{path: '/', component: view('App'), meta: {title: 'Clean Earth'}},
-		{path: '/profile', component: view('Profile'), meta: {title: 'Find your Impact'}}
+		// {path: '/profile', component: view('Profile'), meta: {title: 'Find your Impact'}}
 	]
 });
 
