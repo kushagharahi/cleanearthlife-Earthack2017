@@ -90,11 +90,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-<<<<<<< HEAD
-/******/ 		script.src = __webpack_require__.p + "" + {"0":"873bfffee0aba75980f7"}[chunkId] + ".js";
-=======
-/******/ 		script.src = __webpack_require__.p + "" + {"0":"9b8738b4a40c067b27a1"}[chunkId] + ".js";
->>>>>>> cb55c7ce5be3019eace5327ba9342760f1e32037
+/******/ 		script.src = __webpack_require__.p + "" + {"0":"5cee85256e717118fcc1"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -341,7 +337,6 @@ process.umask = function() { return 0; };
 
 /***/ }),
 /* 1 */
-<<<<<<< HEAD
 /***/ (function(module, exports) {
 
 var g;
@@ -371,8 +366,6 @@ module.exports = g;
 /* 2 */,
 /* 3 */,
 /* 4 */
-=======
->>>>>>> cb55c7ce5be3019eace5327ba9342760f1e32037
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1461,11 +1454,7 @@ var xhrClient = function (request) {
 
 var nodeClient = function (request) {
 
-<<<<<<< HEAD
     var client = __webpack_require__(20);
-=======
-    var client = __webpack_require__(6);
->>>>>>> cb55c7ce5be3019eace5327ba9342760f1e32037
 
     return new PromiseObj(function (resolve) {
 
@@ -1929,11 +1918,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 
 /***/ }),
-<<<<<<< HEAD
 /* 5 */
-=======
-/* 2 */
->>>>>>> cb55c7ce5be3019eace5327ba9342760f1e32037
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4343,11 +4328,7 @@ if (inBrowser && window.Vue) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-<<<<<<< HEAD
 /* 6 */
-=======
-/* 3 */
->>>>>>> cb55c7ce5be3019eace5327ba9342760f1e32037
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13670,7 +13651,6 @@ Vue$3.compile = compileToFunctions;
 
 /* harmony default export */ __webpack_exports__["a"] = (Vue$3);
 
-<<<<<<< HEAD
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0), __webpack_require__(1)))
 
 /***/ }),
@@ -14324,35 +14304,50 @@ function slowToString (encoding, start, end) {
 // The property is used by `Buffer.isBuffer` and `is-buffer` (in Safari 5-7) to detect
 // Buffer instances.
 Buffer.prototype._isBuffer = true
-=======
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0), __webpack_require__(4)))
 
-/***/ }),
-/* 4 */
-/***/ (function(module, exports) {
->>>>>>> cb55c7ce5be3019eace5327ba9342760f1e32037
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1,eval)("this");
-} catch(e) {
-	// This works if the window reference is available
-	if(typeof window === "object")
-		g = window;
+function swap (b, n, m) {
+  var i = b[n]
+  b[n] = b[m]
+  b[m] = i
 }
 
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
+Buffer.prototype.swap16 = function swap16 () {
+  var len = this.length
+  if (len % 2 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 16-bits')
+  }
+  for (var i = 0; i < len; i += 2) {
+    swap(this, i, i + 1)
+  }
+  return this
+}
 
-<<<<<<< HEAD
+Buffer.prototype.swap32 = function swap32 () {
+  var len = this.length
+  if (len % 4 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 32-bits')
+  }
+  for (var i = 0; i < len; i += 4) {
+    swap(this, i, i + 3)
+    swap(this, i + 1, i + 2)
+  }
+  return this
+}
+
+Buffer.prototype.swap64 = function swap64 () {
+  var len = this.length
+  if (len % 8 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 64-bits')
+  }
+  for (var i = 0; i < len; i += 8) {
+    swap(this, i, i + 7)
+    swap(this, i + 1, i + 6)
+    swap(this, i + 2, i + 5)
+    swap(this, i + 3, i + 4)
+  }
+  return this
+}
+
 Buffer.prototype.toString = function toString () {
   var length = this.length | 0
   if (length === 0) return ''
@@ -16072,9 +16067,6 @@ module.exports = function listToStyles (parentId, list) {
   }
   return styles
 }
-=======
-module.exports = g;
->>>>>>> cb55c7ce5be3019eace5327ba9342760f1e32037
 
 
 /***/ })
