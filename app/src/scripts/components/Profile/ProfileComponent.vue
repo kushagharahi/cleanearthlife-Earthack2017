@@ -8,14 +8,7 @@
 		</form>
 
 		<form action="/calculate" method="post">
-			<div class="w3-panel w3-blue">
-				<h1 class="w3-padding-32">Water</h1>
-				Showers per Day: <br> <input type="number" name="nshowered">
-				<br> Time spent per shower: <br> <input type="number"
-														name="tshowered"> <br> Times toilet flushed: <br>
-				<input type="number" name="tflushed"> <br> Times washer
-				used: <br> <input type="number" name="twasher">
-			</div>
+
 			<div class="w3-panel w3-yellow">
 				<h1 class="">Energy</h1>
 				<br>
