@@ -14,10 +14,29 @@ require('file-loader?name=[name].[ext]!../static/index.html');
 const router = new VueRouter({
 	mode: 'history',
 	routes: [
-		{path: '/profile', component: view('Profile'), meta: {title: 'Find your Impact'}}
-	]
+		{
+		path: '/',
+		component: view('HomeComponent'),
+		meta: {title: 'CleanEarth.Life'}
+		},
+		{
+		path: '/profile',
+		component: viewProfile('ProfileComponent'),
+		meta: {title: 'Find your Impact'}
+	}]
 });
 
+function view (name) {
+  return function (resolve) {
+    require(['./components/' + name + '.vue'], resolve)
+  }
+}
+
+function viewProfile (name) {
+  return function (resolve) {
+    require(['./components/profile/' + name + '.vue'], resolve)
+  }
+}
 
 router.beforeEach(function (to, from, next) {
 	document.title = to.meta.title

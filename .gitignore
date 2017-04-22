@@ -5,3 +5,4 @@ app/node_modules/
 app/dist/*
 !app/dist/.gitkeep
 app/npm-debug.log
+.settings/
