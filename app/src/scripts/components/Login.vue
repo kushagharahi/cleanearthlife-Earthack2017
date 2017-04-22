@@ -23,16 +23,6 @@
 				<p class="forgot"><a href="/signup">Need an Account?</a></p>
 
 				<button class="button button-block">Log In</button>
-				<%
-				String a = (String)session.getAttribute("lError");
-				if(a==null){
-				a="";
-				}
-				session.setAttribute("lDisplay", a);
-
-
-				%>
-				<p style="color:red;"><%=session.getAttribute("lDisplay") %></p>
 			</form>
 
 		</div>
