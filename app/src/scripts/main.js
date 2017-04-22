@@ -6,6 +6,8 @@ import App from './App.vue'
 Vue.use(VueRouter)
 Vue.use(VueResource)
 
+require('file-loader?name=[name].[ext]!../static/index.html')
+
 const router = new VueRouter({
   mode: 'history',
   routes: [
