@@ -124,22 +124,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /***/ }),
 /* 14 */
 /***/ (function(module, exports) {
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -431,7 +420,7 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._v("\n\timage\n\t"), _c('h1', [_vm._v("Measure you Environmental Footprint")]), _vm._v(" "), _c('h3', [_vm._v("Steps Toward Positive Remedies")]), _vm._v(" "), _c('p', [_vm._v("Many positive changes have been instituted and others are constantly being researched and implemented to remedy the world's pollution crisis.")]), _vm._v(" "), _c('h3', [_vm._v("What You Can Do")]), _vm._v(" "), _c('p', [_vm._v("Some of the things that you can do to help create a greener world and leave a smaller footprint include:")])])
+  return _c('div', [_c('h1', [_vm._v("Measure you Environmental Footprint")]), _vm._v(" "), _c('h3', [_vm._v("Steps Toward Positive Remedies")]), _vm._v(" "), _c('p', [_vm._v("Many positive changes have been instituted and others are constantly being researched and implemented to remedy the world's pollution crisis.")]), _vm._v(" "), _c('h3', [_vm._v("What You Can Do")]), _vm._v(" "), _c('p', [_vm._v("Some of the things that you can do to help create a greener world and leave a smaller footprint include:")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -561,11 +550,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Need an Account?")])]), _vm._v(" "), _c('button', {
     staticClass: "button button-block"
-  }, [_vm._v("Log In")]), _vm._v("\n\t\t\t<%\n\t\t\tString a = (String)session.getAttribute(\"lError\");\n\t\t\tif(a==null){\n\t\t\ta=\"\";\n\t\t\t}\n\t\t\tsession.setAttribute(\"lDisplay\", a);\n\n\n\t\t\t%>\n\t\t\t"), _c('p', {
-    staticStyle: {
-      "color": "red"
-    }
-  }, [_vm._v("<%=session.getAttribute(\"lDisplay\") %>")])])])])
+  }, [_vm._v("Log In")])])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -728,27 +713,30 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(VueSmoothScroll);
 __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */])
 __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODULE_1_vue_resource__["a" /* default */])
 
-__webpack_require__(5)
+__webpack_require__(5);
 
 const router = new __WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */]({
-  mode: 'history',
-  routes: [
-  ]
-})
+	mode: 'history',
+	routes: [
+		{path: '/', component: view('App'), meta: {title: 'Clean Earth'}},
+		{path: '/profile', component: view('Profile'), meta: {title: 'Find your Impact'}}
+	]
+});
+
 
 router.beforeEach(function (to, from, next) {
-  document.title = to.meta.title
-  next()
-})
+	document.title = to.meta.title
+	next()
+});
 
 const root = new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
-  el: '#app',
-  router: router,
-  render: function(h){
-    return h(__WEBPACK_IMPORTED_MODULE_3__App_vue___default.a)
-  },
-  replace: false
-})
+	el: '#app',
+	router: router,
+	render: function (h) {
+		return h(__WEBPACK_IMPORTED_MODULE_3__App_vue___default.a)
+	},
+	replace: false
+});
 
 /***/ }),
 /* 41 */

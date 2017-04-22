@@ -3,16 +3,11 @@ import VueResource from 'vue-resource';
 import VueRouter from 'vue-router';
 import App from './App.vue';
 
-<<<<<<< HEAD
 var VueSmoothScroll = require('vue-smoothscroll');
 
 Vue.use(VueSmoothScroll);
 Vue.use(VueRouter)
 Vue.use(VueResource)
-=======
-Vue.use(VueRouter);
-Vue.use(VueResource);
->>>>>>> 971db3bc482786ca76530c7bec0644f403dad4b4
 
 require('file-loader?name=[name].[ext]!../static/index.html');
 
