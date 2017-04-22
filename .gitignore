@@ -2,5 +2,10 @@ app/node_modules/
 .idea/
 app/.idea/
 app/node_modules/
-dist/*
-!dist/.gitkeep
+app/dist/*
+!app/dist/.gitkeep
+app/npm-debug.log
+/.settings/
+/.project
+/.classpath
+/.factorypath
