@@ -6,4 +6,6 @@ app/dist/*
 !app/dist/.gitkeep
 app/npm-debug.log
 .settings/
-app/dist/main.js
+.project
+.classpath
+.factorypath
