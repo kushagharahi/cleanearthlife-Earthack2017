@@ -1,7 +1,7 @@
 <template>
 	<div>
 		image
-		<h1>Create a better Earth</h1>
+		<h1>Measure you Environmental Footprint</h1>
 		<h3>Steps Toward Positive Remedies</h3>
 		<p>Many positive changes have been instituted and others are constantly being researched and implemented to remedy the world's pollution crisis.</p>
 		<h3>What You Can Do</h3>
