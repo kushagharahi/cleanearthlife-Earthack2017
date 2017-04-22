@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>LoginProject</display-name>
+
+	<servlet>
+		<servlet-name>SignUpServlet</servlet-name>
+		<servlet-class>SignUp</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>LogInServlet</servlet-name>
+		<servlet-class>LogIn</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>LogOutServlet</servlet-name>
+		<servlet-class>LogOut</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ProfileServlet</servlet-name>
+		<servlet-class>Profile</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>SignUpServlet</servlet-name>
+		<url-pattern>/signup</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>LogInServlet</servlet-name>
+		<url-pattern></url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>LogOutServlet</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ProfileServlet</servlet-name>
+		<url-pattern>/profile</url-pattern>
+	</servlet-mapping>
+
+</web-app>
