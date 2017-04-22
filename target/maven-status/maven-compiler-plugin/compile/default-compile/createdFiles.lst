@@ -1,4 +1,11 @@
-LogIn.class
+Calculate.class
+getKWH.class
+getUsername.class
+Time.class
+getGas.class
+getWater.class
 LogOut.class
-SignUp.class
+Home.class
 Profile.class
+LogIn.class
+SignUp.class

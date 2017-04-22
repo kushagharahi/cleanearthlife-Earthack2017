@@ -1,6 +1,7 @@
 
+import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Arrays;
+import java.io.PrintWriter;
 import java.util.HashMap;
 
 import javax.servlet.ServletException;
@@ -88,6 +89,9 @@ public class Calculate extends HttpServlet {
 		request.setAttribute("gal", gal);
 		request.setAttribute("kwh", kWH);
 		request.setAttribute("gas", fuel);
+		PrintWriter pw = new PrintWriter(new FileWriter("overTime.txt", true));
+		pw.println(gal+","+kWH+","+fuel);
+		pw.close();
 		request.getRequestDispatcher("results.jsp").forward(request, response);
 	}
 

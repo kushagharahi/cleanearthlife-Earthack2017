@@ -24,6 +24,16 @@
 		<servlet-class>Profile</servlet-class>
 	</servlet>
 	
+	<servlet>
+		<servlet-name>HomeServlet</servlet-name>
+		<servlet-class>Home</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>CalculateServlet</servlet-name>
+		<servlet-class>Calculate</servlet-class>
+	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>SignUpServlet</servlet-name>
 		<url-pattern>/signup</url-pattern>
@@ -31,7 +41,7 @@
 
 	<servlet-mapping>
 		<servlet-name>LogInServlet</servlet-name>
-		<url-pattern></url-pattern>
+		<url-pattern>/login</url-pattern>
 	</servlet-mapping>
 	
 	<servlet-mapping>
@@ -42,6 +52,16 @@
 	<servlet-mapping>
 		<servlet-name>ProfileServlet</servlet-name>
 		<url-pattern>/profile</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>HomeServlet</servlet-name>
+		<url-pattern></url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>CalculateServlet</servlet-name>
+		<url-pattern>/calculate</url-pattern>
 	</servlet-mapping>
 
 </web-app>
