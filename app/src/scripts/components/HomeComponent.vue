@@ -2,21 +2,33 @@
 
 	<div id='content'>
         <router-link to='/profile'>Go to Profile</router-link>
-        <div class='fullscreen' id='intro' style='background-color:lightblue'>
+        <div class='fullscreen' id='intro' style='background-color:green'>
             <div id='component'>
                 <intro-component></intro-component>
                  <a class='button-link' v-on:click='scroll("water")'><i class="fa fa-angle-down"></i> Next</a>
             </div>
         </div>
-        <div class='fullscreen' id='water' style='background-color:green'>
+        <div class='fullscreen' id='water' style='background-color:lightblue'>
             <div id='component'>
 			    <water-component></water-component>
                  <a class='button-link' v-on:click='scroll("pollution")'><i class="fa fa-angle-down"></i> Next</a>
             </div>
         </div>
-        <div class='fullscreen' id='pollution' style='background-color:yellow'>
+        <div class='fullscreen' id='pollution' style='background-color:brown'>
             <div id='component'>
 			    <pollution-component></pollution-component>
+                 <a class='button-link' v-on:click='scroll("lights")'><i class="fa fa-angle-down"></i> Next</a>
+            </div>
+        </div>
+        <div class='fullscreen' id='lights' style='background-color:yellow'>
+            <div id='component'>
+			    <lights-component></lights-component>
+                 <a class='button-link' v-on:click='scroll("conclusion")'><i class="fa fa-angle-down"></i> Next</a>
+            </div>
+        </div>
+        <div class='fullscreen' id='conclusion' style='background-color:cyan'>
+            <div id='component'>
+			    <conclusion-component></conclusion-component>
                 <a class='button-link' v-on:click='scroll("intro")'><i class="fa fa-angle-up"></i> Back to Top</a>
             </div>
         </div>
@@ -30,10 +42,11 @@ import NavComponent from './NavComponent.vue'
 import HomeComponent from './HomeComponent.vue'
 import WaterComponent from './WaterComponent.vue'
 import PollutionComponent from './PollutionComponent.vue'
+import ConclusionComponent from './ConclusionComponent.vue'
+import LightsComponent from './LightsComponent.vue'
 
 export default {
-  name: 'app',
-  components: { NavComponent, HomeComponent, LoginComponent, IntroComponent, PollutionComponent, WaterComponent },
+  components: { NavComponent, HomeComponent, LoginComponent, IntroComponent, PollutionComponent, WaterComponent, ConclusionComponent, LightsComponent },
   methods: {
     scroll: function (id) {
       this.$SmoothScroll(document.getElementById(id))
