@@ -43,7 +43,7 @@
             <input type="password"required autocomplete="off" name="cpassword"/>
           </div>
           
-          <p class="forgot"><a href="/">Have an Account?</a></p>
+          <p class="forgot"><a href="/login">Have an Account?</a></p>
           
           <button type="submit" class="button button-block">Get Started</button>
           
