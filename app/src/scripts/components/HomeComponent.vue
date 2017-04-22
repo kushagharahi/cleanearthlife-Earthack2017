@@ -1,4 +1,5 @@
 <template>
+
 	<div id='content'>
         <router-link to='/profile'>Go to Profile</router-link>
         <div class='fullscreen' id='intro' style='background-color:lightblue'>

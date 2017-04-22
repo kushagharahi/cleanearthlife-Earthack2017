@@ -51,3 +51,9 @@ const root = new Vue({
 	},
 	replace: false
 });
+
+function view (name) {
+	return function (resolve) {
+		require(['./components/' + name + '.vue'], resolve)
+	}
+}
