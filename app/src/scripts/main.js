@@ -13,7 +13,12 @@ require('file-loader?name=[name].[ext]!../static/index.html');
 
 const router = new VueRouter({
 	mode: 'history',
-	routes: [{
+	routes: [
+	{
+		path: '/',
+		component: view('HomeComponent'),
+		meta: {title: 'CleanEarth.life'}
+	},{
 		path: '/profile',
 		component: view('ProfileComponent'),
 		meta: {title: 'Find your Impact'}
@@ -34,3 +39,9 @@ const root = new Vue({
 	},
 	replace: false
 });
+
+function view (name) {
+	return function (resolve) {
+		require(['./components/' + name + '.vue'], resolve)
+	}
+}
