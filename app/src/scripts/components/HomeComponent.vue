@@ -23,10 +23,16 @@
         <div class='fullscreen' id='lights' style='background-color:#ffea00'>
             <div id='component'>
 			    <lights-component></lights-component>
-                 <a class='button-link' v-on:click='scroll("conclusion")'><i class="fa fa-angle-down"></i> Next</a>
+                 <a class='button-link' v-on:click='scroll("meat")'><i class="fa fa-angle-down"></i> Next</a>
             </div>
         </div>
-        <div class='fullscreen' id='conclusion' style='background-color:#651fff'>
+        <div class='fullscreen' id='meat' style='background-color:indianred'>
+            <div id='component'>
+                <meat-component></meat-component>
+                <a class='button-link' v-on:click='scroll("intro")'><i class="fa fa-angle-down"></i> Next</a>
+            </div>
+        </div>
+        <div class='fullscreen' id='conclusion' style='background-color:#7c4dff'>
             <div id='component'>
 			    <conclusion-component></conclusion-component>
                 <a class='button-link' v-on:click='scroll("intro")'><i class="fa fa-angle-up"></i> Back to Top</a>
@@ -44,9 +50,10 @@ import WaterComponent from './WaterComponent.vue'
 import PollutionComponent from './PollutionComponent.vue'
 import ConclusionComponent from './ConclusionComponent.vue'
 import LightsComponent from './LightsComponent.vue'
+import MeatComponent from './MeatComponent.vue'
 
 export default {
-  components: { NavComponent, HomeComponent, LoginComponent, IntroComponent, PollutionComponent, WaterComponent, ConclusionComponent, LightsComponent },
+  components: { NavComponent, HomeComponent, LoginComponent, IntroComponent, PollutionComponent, WaterComponent, ConclusionComponent, LightsComponent, MeatComponent },
   methods: {
     scroll: function (id) {
       this.$SmoothScroll(document.getElementById(id))
