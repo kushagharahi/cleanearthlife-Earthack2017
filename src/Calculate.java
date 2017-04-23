@@ -1,4 +1,5 @@
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -89,6 +90,8 @@ public class Calculate extends HttpServlet {
 		request.setAttribute("gal", gal);
 		request.setAttribute("kwh", kWH);
 		request.setAttribute("gas", fuel);
+		File yourFile = new File("overTime.txt");
+		yourFile.createNewFile(); 
 		PrintWriter pw = new PrintWriter(new FileWriter("overTime.txt", true));
 		pw.println(gal+","+kWH+","+fuel);
 		pw.close();

@@ -3,10 +3,31 @@
 <title>Highcharts Tutorial</title>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
    <script src="https://code.highcharts.com/highcharts.js"></script>  
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-<body>
+<body bgcolor="#00b0ff">
+<center>
+<h1>Today's Reults for <%=session.getAttribute("user")%></h1>
+</center>
+<center>
+<a href="/time">Click here to see your history!</a>
+</center>
+<form action="/logout" method="post">
+		<input class = "w3-button w3-green"type="submit" style="position: absolute;
+top: 10px;
+right: 10px;" value="Logout">
+	</form>
+	<form action="/">
+		<input class = "w3-button w3-green"type="submit" style="position: absolute;
+top: 10px;
+left: 10px;" value="Home">
+	</form>
 <div id="gal" style="width: 550px; height: 400px; margin: 0 auto"></div>
+<br>
+<br>
 <div id="kwh" style="width: 550px; height: 400px; margin: 0 auto"></div>
+<br>
+<br>
 <div id="gas" style="width: 550px; height: 400px; margin: 0 auto"></div>
 <script language="JavaScript">
 var temp = <%=request.getAttribute("gal")%>

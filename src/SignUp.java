@@ -64,6 +64,7 @@ public class SignUp extends HttpServlet {
 					request.getSession().setAttribute("user", username);
 					request.getSession().setAttribute("sError", "");
 					insertData(username, password);
+					response.sendRedirect("/profile");
 				}else{
 					request.getSession().setAttribute("sError", "Username Already Exists");
 					response.sendRedirect("/signup");
