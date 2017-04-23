@@ -1709,7 +1709,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "meals"
     }],
     staticStyle: {
-      "width": "20px"
+      "width": "30px"
     },
     attrs: {
       "maxlength": "2"
@@ -1756,7 +1756,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "numRefills"
     }],
     staticStyle: {
-      "width": "20px"
+      "width": "30px"
     },
     attrs: {
       "maxlength": "2"
@@ -1801,7 +1801,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "minutes"
     }],
     staticStyle: {
-      "width": "20px"
+      "width": "30px"
     },
     attrs: {
       "maxlength": "2"
@@ -1848,7 +1848,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "showerMinutes"
     }],
     staticStyle: {
-      "width": "20px"
+      "width": "30px"
     },
     attrs: {
       "maxlength": "2",
@@ -1871,7 +1871,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "milesReduced"
     }],
     staticStyle: {
-      "width": "20px"
+      "width": "30px"
     },
     attrs: {
       "maxlength": "2",
@@ -1894,7 +1894,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "lightReplace"
     }],
     staticStyle: {
-      "width": "20px"
+      "width": "30px"
     },
     attrs: {
       "maxlength": "2",
@@ -1917,7 +1917,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "bottlesReduced"
     }],
     staticStyle: {
-      "width": "20px"
+      "width": "30px"
     },
     attrs: {
       "maxlength": "2",
@@ -1940,7 +1940,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "meatReduced"
     }],
     staticStyle: {
-      "width": "20px"
+      "width": "30px"
     },
     attrs: {
       "maxlength": "2",
@@ -2292,7 +2292,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "distance"
     }],
     staticStyle: {
-      "width": "20px"
+      "width": "30px"
     },
     attrs: {
       "maxlength": "2"
@@ -2314,7 +2314,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "mpg"
     }],
     staticStyle: {
-      "width": "20px"
+      "width": "30px"
     },
     attrs: {
       "maxlength": "2"
@@ -2359,7 +2359,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "traditionalBulb"
     }],
     staticStyle: {
-      "width": "20px"
+      "width": "30px"
     },
     attrs: {
       "maxlength": "2"

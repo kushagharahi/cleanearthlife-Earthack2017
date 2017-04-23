@@ -4,11 +4,11 @@
 		<span v-if="!pledgeMade">
 		<h1>Make the Pledge!</h1>
 		<p>I will commit to:</p>
-		<p>showering <input v-model="showerMinutes" style="width: 20px;" maxlength="2" :disabled="pledgeMade"/> minutes less a day</p>
-		<p>driving   <input v-model="milesReduced" style="width: 20px;" maxlength="2" :disabled="pledgeMade"/> miles less a day</p>
-		<p>replacing <input v-model="lightReplace" style="width: 20px;" maxlength="2" :disabled="pledgeMade"/> traditional light bulbs</p>
-		<p>using     <input v-model="bottlesReduced" style="width: 20px;" maxlength="2":disabled="pledgeMade"/> disposable water bottles less a week</p>
-		<p>eating 	 <input v-model="meatReduced" style="width: 20px;" maxlength="2":disabled="pledgeMade"/> less meals with meat a week</p>
+		<p>showering <input v-model="showerMinutes" style="width: 30px;" maxlength="2" :disabled="pledgeMade"/> minutes less a day</p>
+		<p>driving   <input v-model="milesReduced" style="width: 30px;" maxlength="2" :disabled="pledgeMade"/> miles less a day</p>
+		<p>replacing <input v-model="lightReplace" style="width: 30px;" maxlength="2" :disabled="pledgeMade"/> traditional light bulbs</p>
+		<p>using     <input v-model="bottlesReduced" style="width: 30px;" maxlength="2":disabled="pledgeMade"/> disposable water bottles less a week</p>
+		<p>eating 	 <input v-model="meatReduced" style="width: 30px;" maxlength="2":disabled="pledgeMade"/> less meals with meat a week</p>
 		<input type='button' v-on:click='postData()' value='Make the Pledge!' :disabled="pledgeMade">
 		</span>
 		<span v-if="pledgeMade">

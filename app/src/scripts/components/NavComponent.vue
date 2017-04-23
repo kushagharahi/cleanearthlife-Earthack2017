@@ -18,9 +18,9 @@
         to="/" exact>Home</router-link>
                     
       </li>
-        <!--<li>
+        <li>
         <router-link active-class="active" class="navLink"
-        to="/profile">Profile</router-link>-->
+        to="/profile">Profile</router-link>
                     
       </li>
     </ul>
@@ -102,7 +102,7 @@ background-color: #808080;
 
 .navMenu[type="checkbox"], .navMenu[type=checkbox] + label  {
 height: 20px;
-width: 20px;
+width: 30px;
 margin: 10px;
 position: fixed;
 top: 0;
