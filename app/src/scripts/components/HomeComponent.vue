@@ -1,30 +1,49 @@
 <template>
 
 	<div id='content'>
-        <router-link to='/profile'>Go to Profile</router-link>
         <div class='fullscreen' id='intro' style='background-color:#00e676'>
             <div id='component'>
                 <intro-component></intro-component>
-                 <a class='button-link' v-on:click='scroll("water")'><i class="fa fa-angle-down"></i> Next</a>
+            </div>
+            <div class="bottom_aligner">
+                 <a href="#water" v-on:click='scroll("water")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
             </div>
         </div>
         <div class='fullscreen' id='water' style='background-color:#00b0ff'>
             <div id='component'>
 			    <water-component></water-component>
-                 <a class='button-link' v-on:click='scroll("pollution")'><i class="fa fa-angle-down"></i> Next</a>
             </div>
+            <div class="bottom_aligner">
+                 <a href="#pollution" v-on:click='scroll("pollution")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
+                 </div>
         </div>
         <div class='fullscreen' id='pollution' style='background-color:#bdbdbd'>
             <div id='component'>
 			    <pollution-component></pollution-component>
-                 <a class='button-link' v-on:click='scroll("lights")'><i class="fa fa-angle-down"></i> Next</a>
             </div>
+            <div class="bottom_aligner">
+                 <a href="#lights" v-on:click='scroll("lights")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
+                 </div>
         </div>
         <div class='fullscreen' id='lights' style='background-color:#ffea00'>
             <div id='component'>
 			    <lights-component></lights-component>
+<<<<<<< HEAD
                  <a class='button-link' v-on:click='scroll("meat")'><i class="fa fa-angle-down"></i> Next</a>
+=======
+>>>>>>> c8c27ed79c00acaa74359da9211692edc755ac63
             </div>
+            <div class="bottom_aligner">
+                 <a href="#plastic" v-on:click='scroll("plasticBottle")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
+                 </div>
+        </div>
+           <div class='fullscreen' id='plasticBottle' style='background-color:#f50057'>
+            <div id='component'>
+			    <plastic-bottle-component></plastic-bottle-component>
+            </div>
+            <div class="bottom_aligner">
+                 <a href="#conclusion" v-on:click='scroll("conclusion")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
+                 </div>
         </div>
         <div class='fullscreen' id='meat' style='background-color:indianred'>
             <div id='component'>
@@ -35,8 +54,10 @@
         <div class='fullscreen' id='conclusion' style='background-color:#7c4dff'>
             <div id='component'>
 			    <conclusion-component></conclusion-component>
-                <a class='button-link' v-on:click='scroll("intro")'><i class="fa fa-angle-up"></i> Back to Top</a>
             </div>
+            <div class="bottom_aligner">
+                 <a href="#intro" v-on:click='scroll("intro")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
+                 </div>
         </div>
 	</div>
 </template>
@@ -50,10 +71,11 @@ import WaterComponent from './WaterComponent.vue'
 import PollutionComponent from './PollutionComponent.vue'
 import ConclusionComponent from './ConclusionComponent.vue'
 import LightsComponent from './LightsComponent.vue'
+import PlasticBottleComponent from './PlasticBottleComponent.vue'
 import MeatComponent from './MeatComponent.vue'
 
 export default {
-  components: { NavComponent, HomeComponent, LoginComponent, IntroComponent, PollutionComponent, WaterComponent, ConclusionComponent, LightsComponent, MeatComponent },
+  components: { NavComponent, HomeComponent, LoginComponent, IntroComponent, PollutionComponent, WaterComponent, ConclusionComponent, LightsComponent, PlasticBottleComponent, MeatComponent },
   methods: {
     scroll: function (id) {
       this.$SmoothScroll(document.getElementById(id))
@@ -66,6 +88,15 @@ export default {
 .fullscreen {
     width: 100%; 
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom_aligner {
+    display: inline-block;
+    align-self: flex-end;
+    margin-top: auto;
 }
 
 #component {
@@ -76,36 +107,4 @@ export default {
     padding-right: 20px;
 }
 
-.button-link {
-	padding: 10px 15px;
-	background: #4479BA;
-	color: #FFF;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	border: solid 1px #20538D;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-	-webkit-transition-duration: 0.2s;
-	-moz-transition-duration: 0.2s;
-	transition-duration: 0.2s;
-	-webkit-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none;    
-}
-.button-link:hover {
-	background: #356094;
-	border: solid 1px #2A4E77;
-	text-decoration: none;
-}
-.button-link:active {
-	-webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
-	-moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
-	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
-	background: #2E5481;
-	border: solid 1px #203E5F;
-}
 </style>
