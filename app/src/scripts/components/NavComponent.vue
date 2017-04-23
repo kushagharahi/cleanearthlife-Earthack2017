@@ -18,8 +18,14 @@
         to="/" exact>Home</router-link>
                     
       </li>
+<<<<<<< HEAD
         <li>
         <a href="/profile" class="navLink">Profile</a>
+=======
+        <!--<li>
+        <router-link active-class="active" class="navLink"
+        to="/profile">Profile</router-link>-->
+>>>>>>> 413027cf36a57c0a67125ea1082909867123b91a
                     
       </li>
     </ul>

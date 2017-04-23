@@ -55,7 +55,7 @@ var options = {
         data: waterarr
       },{
         name: 'Electricity',
-        color: 'yellow',
+        color: 'orange',
         data: kwharr
       },{
         name: 'Gas',

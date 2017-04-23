@@ -28,7 +28,7 @@
 
 	<center>
 		<form action="/calculate" method="post">
-			<div class="w3-panel w3-blue">
+			<div class="w3-panel" style="background:#00b0ff;">
 				<h1 class="w3-padding-16">Water</h1>
 				<div class="w3-row">
 					<div class="w3-col l4">
@@ -50,7 +50,7 @@
 				</div>
 
 			</div>
-			<div class="w3-panel w3-yellow">
+			<div class="w3-panel" style="background:#ffea00;">
 				<h1 class="">Energy</h1>
 				<br>
 
@@ -75,7 +75,7 @@
 				Desktop <input class="w3-check" type="checkbox" id="B"
 					name="electric" value="B"> Incandescent Bulbs <br> <br>
 			</div>
-			<div class="w3-panel w3-green">
+			<div class="w3-panel" style="background: #bdbdbd;">
 				<h1 class="w3-padding-16">Pollution</h1>
 				<div class="w3-row">
 					<div class="w3-col l4">
