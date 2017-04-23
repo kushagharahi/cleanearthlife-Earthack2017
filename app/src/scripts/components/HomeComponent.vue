@@ -17,6 +17,14 @@
                  <a href="#pollution" v-on:click='scroll("pollution")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
                  </div>
         </div>
+        <div class='fullscreen' id='meat' style='background-color:indianred'>
+            <div id='component'>
+                <meat-component></meat-component>
+            </div>
+            <div class="bottom_aligner">
+                <a href="#pledge" v-on:click='scroll("pledge")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
+            </div>
+        </div>
         <div class='fullscreen' id='pollution' style='background-color:#bdbdbd'>
             <div id='component'>
 			    <pollution-component></pollution-component>
@@ -39,14 +47,6 @@
             </div>
             <div class="bottom_aligner">
                  <a href="#meat" v-on:click='scroll("meat")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
-                 </div>
-        </div>
-        <div class='fullscreen' id='meat' style='background-color:indianred'>
-            <div id='component'>
-                <meat-component></meat-component>
-            </div>
-              <div class="bottom_aligner">
-                  <a href="#pledge" v-on:click='scroll("pledge")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
                  </div>
         </div>
         <div class='fullscreen' id='pledge' style='background-color:mediumseagreen'>
