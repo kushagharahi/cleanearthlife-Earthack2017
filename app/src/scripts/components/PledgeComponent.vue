@@ -8,7 +8,6 @@
 		<p>replacing <input v-model="meals" style="width: 20px;" maxlength="2"/> light bulbs</p>
 		<p>refilling water bottles <input v-model="meals" style="width: 20px;" maxlength="2"/> times before recycling</p>
 		<p>eating <input v-model="meals" style="width: 20px;" maxlength="2"/> less meals with meat a week</p>
-		<p> <input v-model="meals" style="width: 20px;" maxlength="2"/> miles less a day</p>
 		<button>Make the Pledge!</button>
 	</div>
 </template>

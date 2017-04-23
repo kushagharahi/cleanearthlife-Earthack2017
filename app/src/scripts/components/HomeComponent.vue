@@ -49,7 +49,7 @@
                   <a href="#conlusion" v-on:click='scroll("conclusion")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
                  </div>
         </div>
-        <div class='fullscreen' id='conclusion' style='background-color:#7c4dff'>
+        <div class='fullscreen' id='conclusion' style='background-color:mediumseagreen'>
             <div id='component'>
                 <pledge-component></pledge-component>
             </div>
@@ -79,7 +79,7 @@ import MeatComponent from './MeatComponent.vue'
 import PledgeComponent from './PledgeComponent.vue'
 
 export default {
-  components: { NavComponent, HomeComponent, LoginComponent, IntroComponent, PollutionComponent, WaterComponent, ConclusionComponent, LightsComponent, PlasticBottleComponent, MeatComponent },
+  components: { NavComponent, HomeComponent, LoginComponent, IntroComponent, PollutionComponent, WaterComponent, ConclusionComponent, LightsComponent, PlasticBottleComponent, MeatComponent, PledgeComponent },
   methods: {
     scroll: function (id) {
       this.$SmoothScroll(document.getElementById(id))
