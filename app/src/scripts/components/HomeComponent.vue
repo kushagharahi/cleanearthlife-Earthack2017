@@ -46,13 +46,16 @@
                 <meat-component></meat-component>
             </div>
               <div class="bottom_aligner">
-                  <a href="#conlusion" v-on:click='scroll("conclusion")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
+                  <a href="#pledge" v-on:click='scroll("pledge")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
                  </div>
         </div>
-        <div class='fullscreen' id='conclusion' style='background-color:mediumseagreen'>
+        <div class='fullscreen' id='pledge' style='background-color:mediumseagreen'>
             <div id='component'>
                 <pledge-component></pledge-component>
             </div>
+                          <div class="bottom_aligner">
+                  <a href="#conlusion" v-on:click='scroll("conclusion")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
+                 </div>
         </div>
         <div class='fullscreen' id='conclusion' style='background-color:#7c4dff'>
             <div id='component'>
