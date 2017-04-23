@@ -2,11 +2,11 @@
 	<div>
 		<i class="fa fa-cutlery" aria-hidden="true" style="font-size: 10em;"></i>
 		<h1>Reduce Your Meat Consumption</h1>
-		<p>Methane from cattle waste accounts for 14.5 and 18 percent of the total greenhouse gas emissions</p>
-		<p>If you reduced your daily commute by <input v-model="distance" style="width: 20px;" maxlength="2"/> miles per day in a car that averaged <input v-model="mpg" style="width: 20px;" maxlength="2"/> city miles per gallon, you would save a daily amount of <b>{{pollutionSaved}} pounds</b> of pollution</p>
-		<p>...in a week <b>{{(pollutionSaved * 7).toFixed(1)}}</b> pounds</p>
-		<p>...in a month <b>{{(pollutionSaved * 31).toFixed(1)}}</b> pounds</p>
-		<p>...in a year a whopping <b>{{(pollutionSaved * 365).toFixed(1)}}</b> pounds!!</p>
+		<p>Methane from cattle waste accounts for <b>14.5</b> and <b>18</b> percent of the total greenhouse gas emissions</p>
+		<p>If you reduced the amount of meat you consume each week by <input v-model="meals" style="width: 20px;" maxlength="2"/> meals, you would reduce your impact on methane emissions in a day by <b>{{totalCow()}}</b> liters</p>
+		<p>...in a week <b>{{(totalCow() * 7).toFixed(1)}}</b> liters</p>
+		<p>...in a month <b>{{(totalCow() * 31).toFixed(1)}}</b> liters</p>
+		<p>...in a year a whopping <b>{{(totalCow() * 365).toFixed(1)}}</b> liters!!</p>
 	</div>
 </template>
 
@@ -14,13 +14,17 @@
 export default {
 	data: function () {
 		return {
-			distance: 2,
-			mpg: 25,
-			pollutionSaved: 0
+			meals: 1,
+			cowWeight: 1000,
+			cowLife: 540,
+			cowMethane: 250,
+			poundPerMeal: .5
 		}
 	},
-	created: function () {
-		this.pollutionSaved = (this.distance / this.mpg) * 19.5
+	methods: {
+		totalCow: function () {
+			return (this.cowLife * this.cowMethane * (this.poundPerMeal / this.cowWeight)) * this.meals
+		}
 	}
 }
 </script>

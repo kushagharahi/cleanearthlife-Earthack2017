@@ -33,7 +33,7 @@
                  <a href="#plastic" v-on:click='scroll("plasticBottle")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
                  </div>
         </div>
-           <div class='fullscreen' id='plasticBottle' style='background-color:#f50057'>
+           <div class='fullscreen' id='plasticBottle' style='background-color:cadetblue'>
             <div id='component'>
 			    <plastic-bottle-component></plastic-bottle-component>
             </div>
@@ -46,7 +46,7 @@
                 <meat-component></meat-component>
             </div>
               <div class="bottom_aligner">
-                 <a href="#conclusion" v-on:click='scroll("conclusion")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
+                  <a href="#conlusion" v-on:click='scroll("conclusion")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
                  </div>
         </div>
         <div class='fullscreen' id='conclusion' style='background-color:#7c4dff'>
