@@ -28,10 +28,6 @@
         <div class='fullscreen' id='lights' style='background-color:#ffea00'>
             <div id='component'>
 			    <lights-component></lights-component>
-<<<<<<< HEAD
-                 <a class='button-link' v-on:click='scroll("meat")'><i class="fa fa-angle-down"></i> Next</a>
-=======
->>>>>>> c8c27ed79c00acaa74359da9211692edc755ac63
             </div>
             <div class="bottom_aligner">
                  <a href="#plastic" v-on:click='scroll("plasticBottle")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
@@ -42,14 +38,16 @@
 			    <plastic-bottle-component></plastic-bottle-component>
             </div>
             <div class="bottom_aligner">
-                 <a href="#conclusion" v-on:click='scroll("conclusion")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
+                 <a href="#meat" v-on:click='scroll("meat")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
                  </div>
         </div>
         <div class='fullscreen' id='meat' style='background-color:indianred'>
             <div id='component'>
                 <meat-component></meat-component>
-                <a class='button-link' v-on:click='scroll("intro")'><i class="fa fa-angle-down"></i> Next</a>
             </div>
+              <div class="bottom_aligner">
+                 <a href="#conclusion" v-on:click='scroll("conclusion")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
+                 </div>
         </div>
         <div class='fullscreen' id='conclusion' style='background-color:#7c4dff'>
             <div id='component'>
