@@ -24,10 +24,6 @@
 		<servlet-class>Profile</servlet-class>
 	</servlet>
 	
-	<servlet>
-		<servlet-name>HomeServlet</servlet-name>
-		<servlet-class>Home</servlet-class>
-	</servlet>
 	
 	<servlet>
 		<servlet-name>CalculateServlet</servlet-name>
@@ -54,10 +50,7 @@
 		<url-pattern>/profile</url-pattern>
 	</servlet-mapping>
 	
-	<servlet-mapping>
-		<servlet-name>HomeServlet</servlet-name>
-		<url-pattern></url-pattern>
-	</servlet-mapping>
+
 	
 	<servlet-mapping>
 		<servlet-name>CalculateServlet</servlet-name>
