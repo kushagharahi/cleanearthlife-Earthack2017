@@ -4,6 +4,9 @@
 		<h2>Take Shorter Showers</h2>
 		<p>In an average home, showers have the third largest water usage, after toilets and washing machines. On average each shower uses <b>17.2 gallons</b> over <b>8 minutes</b>.</p>
 		<p>If you showered <input v-model="minutes" style="width: 20px;" maxlength="2"/> minutes less a day, you would save <b>{{waterSaved}} gallons</b> a shower.</p>
+		<p>...in a week <b>{{(waterSaved * 7).toFixed(1)}} </b>gallons</p>
+		<p>...in a month <b>{{(waterSaved * 31).toFixed(1)}}</b> gallons</p>
+		<p>...in a year a whopping <b>{{(waterSaved * 365).toFixed(1)}}</b> gallons!!</p>
 	</div>
 </template>
 

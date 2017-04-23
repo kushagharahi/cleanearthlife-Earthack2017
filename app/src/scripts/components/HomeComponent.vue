@@ -2,31 +2,31 @@
 
 	<div id='content'>
         <router-link to='/profile'>Go to Profile</router-link>
-        <div class='fullscreen' id='intro' style='background-color:green'>
+        <div class='fullscreen' id='intro' style='background-color:#00e676'>
             <div id='component'>
                 <intro-component></intro-component>
                  <a class='button-link' v-on:click='scroll("water")'><i class="fa fa-angle-down"></i> Next</a>
             </div>
         </div>
-        <div class='fullscreen' id='water' style='background-color:lightblue'>
+        <div class='fullscreen' id='water' style='background-color:#00b0ff'>
             <div id='component'>
 			    <water-component></water-component>
                  <a class='button-link' v-on:click='scroll("pollution")'><i class="fa fa-angle-down"></i> Next</a>
             </div>
         </div>
-        <div class='fullscreen' id='pollution' style='background-color:brown'>
+        <div class='fullscreen' id='pollution' style='background-color:#bdbdbd'>
             <div id='component'>
 			    <pollution-component></pollution-component>
                  <a class='button-link' v-on:click='scroll("lights")'><i class="fa fa-angle-down"></i> Next</a>
             </div>
         </div>
-        <div class='fullscreen' id='lights' style='background-color:yellow'>
+        <div class='fullscreen' id='lights' style='background-color:#ffea00'>
             <div id='component'>
 			    <lights-component></lights-component>
                  <a class='button-link' v-on:click='scroll("conclusion")'><i class="fa fa-angle-down"></i> Next</a>
             </div>
         </div>
-        <div class='fullscreen' id='conclusion' style='background-color:cyan'>
+        <div class='fullscreen' id='conclusion' style='background-color:#651fff'>
             <div id='component'>
 			    <conclusion-component></conclusion-component>
                 <a class='button-link' v-on:click='scroll("intro")'><i class="fa fa-angle-up"></i> Back to Top</a>
