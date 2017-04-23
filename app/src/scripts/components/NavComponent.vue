@@ -19,8 +19,7 @@
                     
       </li>
         <li>
-        <router-link active-class="active" class="navLink"
-        to="/profile">Profile</router-link>
+        <a href="/profile" class="navLink">Profile</a>
                     
       </li>
     </ul>

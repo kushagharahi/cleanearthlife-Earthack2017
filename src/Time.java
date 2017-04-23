@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Time
  */
-@WebServlet("/Time")
+@WebServlet("/time")
 public class Time extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

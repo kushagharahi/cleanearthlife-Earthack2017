@@ -6,9 +6,20 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
    <script src="https://code.highcharts.com/highcharts.js"></script>  
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>All Results</title>
 </head>
-<body>
+<form action="/logout" method="post">
+		<input class = "w3-button w3-green"type="submit" style="position: absolute;
+top: 10px;
+right: 10px;" value="Logout">
+	</form>
+	<form action="/profile">
+		<input class = "w3-button w3-green"type="submit" style="position: absolute;
+top: 10px;
+left: 10px;" value="Profile">
+	</form>
+<body bgcolor="#bdbdbd">
 <div id="combo" style="width: 550px; height: 400px; margin: 0 auto"></div>
 </body>
 <script language="JavaScript">

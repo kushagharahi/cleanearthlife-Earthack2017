@@ -204,7 +204,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -358,14 +357,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "to": "/",
       "exact": ""
     }
-  }, [_vm._v("Home")])], 1), _vm._v(" "), _c('li', [_c('router-link', {
+  }, [_vm._v("Home")])], 1), _vm._v(" "), _vm._m(0)])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('li', [_c('a', {
     staticClass: "navLink",
     attrs: {
-      "active-class": "active",
-      "to": "/profile"
+      "href": "/profile"
     }
-  }, [_vm._v("Profile")])], 1)])])
-},staticRenderFns: []}
+  }, [_vm._v("Profile")])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
@@ -387,19 +387,27 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v(" Made with ❤ by "), _c('a', {
     attrs: {
-      "href": "https://github.com/RKarkala"
+      "href": "https://github.com/RKarkala",
+      "target": "_blank",
+      "rel": "noopener"
     }
   }, [_vm._v("Rohith Karkala")]), _vm._v(", "), _c('a', {
     attrs: {
-      "href": "https://github.com/stephenhales"
+      "href": "https://github.com/stephenhales",
+      "target": "_blank",
+      "rel": "noopener"
     }
   }, [_vm._v("Stephen Hales")]), _vm._v(", and "), _c('a', {
     attrs: {
-      "href": "https://github.com/kushagharahi/"
+      "href": "https://github.com/kushagharahi/",
+      "target": "_blank",
+      "rel": "noopener"
     }
   }, [_vm._v("Kusha Gharahi")]), _vm._v(" at "), _c('a', {
     attrs: {
-      "href": "http://hackdfw.com/earthack/"
+      "href": "http://hackdfw.com/earthack/",
+      "target": "_blank",
+      "rel": "noopener"
     }
   }, [_vm._v("Earthack 2017")]), _vm._v(" in Dallas! ")])])
 }]}
