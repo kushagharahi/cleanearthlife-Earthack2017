@@ -18,9 +18,9 @@
         to="/" exact>Home</router-link>
                     
       </li>
-        <li>
+        <!--<li>
         <router-link active-class="active" class="navLink"
-        to="/profile">Profile</router-link>
+        to="/profile">Profile</router-link>-->
                     
       </li>
     </ul>
