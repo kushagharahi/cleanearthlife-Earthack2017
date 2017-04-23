@@ -2,8 +2,6 @@ app/node_modules/
 .idea/
 app/.idea/
 app/node_modules/
-app/dist/*
-!app/dist/.gitkeep
 app/npm-debug.log
 /.settings/
 /.project

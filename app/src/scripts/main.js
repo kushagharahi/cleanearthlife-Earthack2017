@@ -11,6 +11,7 @@ Vue.use(VueResource)
 
 require('file-loader?name=[name].[ext]!../static/index.html');
 require('file-loader?name=[name].[ext]!../static/w3.css');
+require('file-loader?name=[name]!../static/CNAME');
 
 const router = new VueRouter({
 	mode: 'history',
