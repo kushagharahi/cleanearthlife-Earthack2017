@@ -5478,7 +5478,7 @@ button.btn-floating {
 .waves-effect .waves-ripple {
   position: absolute;
   border-radius: 50%;
-  width: 20px;
+  width: 30px;
   height: 20px;
   margin-top: -10px;
   margin-left: -10px;
@@ -6634,7 +6634,7 @@ form p:last-child {
 
 [type="checkbox"].filled-in:not(:checked) + label:after {
   height: 20px;
-  width: 20px;
+  width: 30px;
   background-color: transparent;
   border: 2px solid #5a5a5a;
   top: 0px;
@@ -6658,7 +6658,7 @@ form p:last-child {
 
 [type="checkbox"].filled-in:checked + label:after {
   top: 0;
-  width: 20px;
+  width: 30px;
   height: 20px;
   border: 2px solid #26a69a;
   background-color: #26a69a;

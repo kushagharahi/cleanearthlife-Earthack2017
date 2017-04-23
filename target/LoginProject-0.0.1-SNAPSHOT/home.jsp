@@ -76,7 +76,7 @@
 								<b>17.2 gallons</b> over <b>8 minutes</b>.
 							</p>
 							<p>
-								If you showered <input v-model="minutes" style="width: 20px;"
+								If you showered <input v-model="minutes" style="width: 30px;"
 									maxlength="2" /> minutes less a day, you would save <b>{{waterSaved}}
 									gallons</b> a shower.
 							</p>
