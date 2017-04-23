@@ -33,7 +33,7 @@
                  <a href="#plastic" v-on:click='scroll("plasticBottle")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
                  </div>
         </div>
-           <div class='fullscreen' id='plasticBottle' style='background-color:cadetblue'>
+        <div class='fullscreen' id='plasticBottle' style='background-color:cadetblue'>
             <div id='component'>
 			    <plastic-bottle-component></plastic-bottle-component>
             </div>
@@ -48,6 +48,11 @@
               <div class="bottom_aligner">
                   <a href="#conlusion" v-on:click='scroll("conclusion")'><i class="fa fa-angle-down" style="font-size:7em"></i></a>
                  </div>
+        </div>
+        <div class='fullscreen' id='conclusion' style='background-color:#7c4dff'>
+            <div id='component'>
+                <pledge-component></pledge-component>
+            </div>
         </div>
         <div class='fullscreen' id='conclusion' style='background-color:#7c4dff'>
             <div id='component'>
@@ -71,6 +76,7 @@ import ConclusionComponent from './ConclusionComponent.vue'
 import LightsComponent from './LightsComponent.vue'
 import PlasticBottleComponent from './PlasticBottleComponent.vue'
 import MeatComponent from './MeatComponent.vue'
+import PledgeComponent from './PledgeComponent.vue'
 
 export default {
   components: { NavComponent, HomeComponent, LoginComponent, IntroComponent, PollutionComponent, WaterComponent, ConclusionComponent, LightsComponent, PlasticBottleComponent, MeatComponent },
